@@ -1,0 +1,46 @@
+.botao-voltar-topo {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 48px;
+  height: 48px;
+
+  background-color: var(--cor-marrom);
+  color: var(--cor-dourado);
+
+  border: 1px solid var(--cor-dourado);
+  border-radius: 50%;
+
+  font-size: 26px;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  z-index: 1000;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+
+  transition: all 0.3s ease;
+}
+
+.botao-voltar-topo:hover {
+  background-color: var(--cor-dourado);
+  color: var(--cor-marrom);
+
+  transform: translateY(-4px);
+}
+
+@media (max-width: 480px) {
+  .botao-voltar-topo {
+    width: 42px;
+    height: 42px;
+
+    bottom: 20px;
+    right: 20px;
+
+    font-size: 23px;
+  }
+}

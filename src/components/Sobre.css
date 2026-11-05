@@ -1,0 +1,185 @@
+/* ========================================
+   SEÇÃO SOBRE O ESCRITÓRIO
+======================================== */
+
+.sobre {
+  padding: 100px 7%;
+  background-color: var(--cor-marfim);
+}
+
+.sobre-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+  gap: 80px;
+}
+
+/* Conteúdo textual */
+.sobre-conteudo {
+  max-width: 650px;
+}
+
+.sobre-subtitulo {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 3px;
+
+  color: var(--cor-dourado);
+}
+
+.sobre-conteudo h2 {
+  font-family: Georgia, serif;
+  font-size: 42px;
+  font-weight: normal;
+  line-height: 1.3;
+
+  color: var(--cor-marrom);
+
+  margin-bottom: 30px;
+}
+
+.sobre-conteudo p {
+  font-size: 16px;
+  line-height: 1.9;
+
+  color: #5c5149;
+
+  margin-bottom: 20px;
+}
+
+/* Elemento visual */
+.sobre-destaque {
+  min-height: 400px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px;
+
+  background: linear-gradient(145deg, #3b2418, #24140c);
+
+  border: 1px solid var(--cor-dourado);
+
+  position: relative;
+}
+
+/* Detalhe decorativo interno */
+.sobre-destaque::before {
+  content: "";
+
+  position: absolute;
+  inset: 15px;
+
+  border: 1px solid rgba(201, 164, 102, 0.4);
+}
+
+/* Monograma */
+.sobre-monograma {
+  font-family: Georgia, serif;
+  font-size: 110px;
+  font-weight: normal;
+
+  color: var(--cor-dourado);
+
+  line-height: 1;
+  margin-bottom: 30px;
+}
+
+.sobre-destaque-texto {
+  font-family: Georgia, serif;
+  font-size: 24px;
+  letter-spacing: 4px;
+
+  color: var(--cor-marfim);
+
+  margin-bottom: 15px;
+}
+
+.sobre-destaque-legenda {
+  font-size: 11px;
+  letter-spacing: 3px;
+
+  color: var(--cor-dourado);
+}
+
+/* ========================================
+   RESPONSIVIDADE — SEÇÃO SOBRE
+======================================== */
+
+@media (max-width: 850px) {
+  .sobre {
+    padding: 70px 6%;
+  }
+
+  .sobre-container {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .sobre-conteudo {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .sobre-conteudo h2 {
+    font-size: 36px;
+  }
+
+  .sobre-destaque {
+    min-height: 350px;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/* CELULARES */
+@media (max-width: 480px) {
+  .sobre {
+    padding: 55px 5%;
+  }
+
+  .sobre-subtitulo {
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+
+  .sobre-conteudo h2 {
+    font-size: 30px;
+    line-height: 1.3;
+    margin-bottom: 24px;
+  }
+
+  .sobre-conteudo p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .sobre-destaque {
+    min-height: 280px;
+    padding: 30px 20px;
+  }
+
+  .sobre-monograma {
+    font-size: 85px;
+    margin-bottom: 25px;
+  }
+
+  .sobre-destaque-texto {
+    font-size: 19px;
+    letter-spacing: 3px;
+  }
+
+  .sobre-destaque-legenda {
+    font-size: 9px;
+    letter-spacing: 2px;
+  }
+}

@@ -1,0 +1,132 @@
+.header {
+  width: 100%;
+  min-height: 120px;
+  padding: 20px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+
+  background-color: var(--cor-marrom);
+  border-bottom: 3px solid var(--cor-dourado);
+}
+
+/* Marca do escritório */
+.header-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  width: 340px;
+  color: var(--cor-dourado);
+}
+
+.brand-name {
+  font-family: Georgia, serif;
+  font-size: 32px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.brand-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  margin: 8px 0;
+}
+
+.brand-divider span:not(.brand-diamond) {
+  flex: 1;
+  height: 1px;
+  background-color: var(--cor-dourado);
+}
+
+.brand-diamond {
+  font-size: 12px;
+}
+
+.brand-subtitle {
+  font-family: Georgia, serif;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+/* Navegação */
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.header-nav a {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--cor-branco);
+  transition: color 0.3s ease;
+}
+
+.header-nav a:hover {
+  color: var(--cor-dourado);
+}
+
+/* Botão do menu mobile */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  width: 42px;
+  height: 42px;
+  padding: 8px;
+  background: transparent;
+  border: 1px solid rgba(201, 169, 110, 0.4);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #c9a96e;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 860px) {
+  .header {
+    padding: 15px 6%;
+    position: relative;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .header-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding: 15px 0;
+    background: #2b211c;
+    border-top: 1px solid rgba(201, 169, 110, 0.2);
+    z-index: 1000;
+  }
+
+  .header-nav.ativo {
+    display: flex;
+  }
+
+  .header-nav a {
+    width: 100%;
+    padding: 15px 20px;
+    text-align: center;
+  }
+}

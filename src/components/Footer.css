@@ -1,0 +1,148 @@
+.footer {
+  background: #211914;
+  color: #f7f3ec;
+  padding: 70px 8% 25px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 60px;
+}
+
+.footer-marca h2 {
+  color: #c9a96e;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.footer-marca span {
+  color: #c9a96e;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+}
+
+.footer-marca p {
+  max-width: 300px;
+  margin-top: 22px;
+  color: #c9beb3;
+  line-height: 1.7;
+}
+
+.footer-links,
+.footer-contato {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-links h3,
+.footer-contato h3 {
+  color: #c9a96e;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 22px;
+}
+
+.footer-links a {
+  color: #d6ccc2;
+  text-decoration: none;
+  margin-bottom: 13px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #c9a96e;
+}
+
+.footer-contato p {
+  color: #d6ccc2;
+  margin-bottom: 13px;
+  line-height: 1.6;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 55px auto 0;
+  padding-top: 25px;
+  border-top: 1px solid rgba(201, 169, 110, 0.2);
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: #a99c90;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.footer-credit {
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--cor-dourado);
+  letter-spacing: 0.5px;
+  opacity: 0.85;
+  text-align: center;
+}
+
+@media (max-width: 850px) {
+  .footer {
+    padding: 55px 6% 25px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .footer-marca,
+  .footer-links,
+  .footer-contato {
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-marca p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-bottom {
+    text-align: center;
+  }
+
+  .footer-marca p {
+    max-width: 450px;
+  }
+
+  .footer-bottom {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 45px 5% 20px;
+  }
+
+  .footer-marca h2 {
+    font-size: 1.6rem;
+  }
+
+  .footer-marca p,
+  .footer-links a,
+  .footer-contato p {
+    font-size: 0.9rem;
+  }
+
+  .footer-links h3,
+  .footer-contato h3 {
+    margin-bottom: 18px;
+  }
+
+  .footer-bottom p {
+    font-size: 0.8rem;
+  }
+}
