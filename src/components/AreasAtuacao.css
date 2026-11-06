@@ -42,11 +42,26 @@
 }
 
 /* GRID */
-
 .areas-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 30px;
+}
+
+/* Primeira linha: 3 cards */
+.area-card:nth-child(1),
+.area-card:nth-child(2),
+.area-card:nth-child(3) {
+  grid-column: span 2;
+}
+
+/* Segunda linha: 2 cards centralizados */
+.area-card:nth-child(4) {
+  grid-column: 2 / span 2;
+}
+
+.area-card:nth-child(5) {
+  grid-column: 4 / span 2;
 }
 
 /* CARDS */
@@ -113,22 +128,24 @@
   .areas-grid {
     grid-template-columns: 1fr;
     gap: 25px;
+  }
 
-    .area-card {
-      text-align: center;
-    }
-
-    .area-numero {
-      text-align: center;
-    }
-
-    .area-detalhe {
-      text-align: center;
-    }
+  .area-card:nth-child(1),
+  .area-card:nth-child(2),
+  .area-card:nth-child(3),
+  .area-card:nth-child(4),
+  .area-card:nth-child(5) {
+    grid-column: auto;
   }
 
   .area-card {
     padding: 40px 30px;
+    text-align: center;
+  }
+
+  .area-numero,
+  .area-detalhe {
+    text-align: center;
   }
 }
 

@@ -24,7 +24,12 @@ function Home() {
                 confiança e dedicação.
               </p>
 
-              <a href="#contato" className="hero-button">
+              <a
+                href="https://wa.me/5589994340770"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hero-button"
+              >
                 Entre em contato
               </a>
             </div>

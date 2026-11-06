@@ -4,7 +4,7 @@
 
 .hero {
   width: 100%;
-  min-height: 600px;
+  min-height: calc(100vh - 140px);
 
   display: flex;
   align-items: center;
@@ -109,14 +109,14 @@
 /* HERO RESPONSIVO */
 @media (max-width: 850px) {
   .hero {
-    min-height: auto;
+    min-height: calc(100vh - 132px);
   }
 
   .hero-container {
     flex-direction: column;
     text-align: center;
-    gap: 40px;
-    padding: 70px 6%;
+    gap: 30px;
+    padding: 45px 6%;
   }
 
   .hero-content {

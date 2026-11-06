@@ -15,7 +15,7 @@ function Footer() {
           <h3>Navegação</h3>
 
           <a href="#inicio">Início</a>
-          <a href="#sobre">O Escritório</a>
+          <a href="#sobre">A Advogada</a>
           <a href="#atuacao">Áreas de Atuação</a>
           <a href="#contato">Contato</a>
         </div>
@@ -23,8 +23,13 @@ function Footer() {
         <div className="footer-contato">
           <h3>Contato</h3>
 
-          <p>WhatsApp: (XX) XXXXX-XXXX</p>
-          <p>E-mail: contato@seudominio.com.br</p>
+          <a
+            href="https://wa.me/5589994340770"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            WhatsApp: (89) 99434-0770
+          </a>
         </div>
       </div>
 
@@ -33,6 +38,7 @@ function Footer() {
           © {new Date().getFullYear()} Francisca Leal Advocacia Especializada.
           Todos os direitos reservados.
         </p>
+
         <p className="footer-credit">Desenvolvido por Jansen Muniz</p>
       </div>
     </footer>
