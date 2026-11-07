@@ -3,7 +3,7 @@ import Sobre from "../components/Sobre";
 import AreasAtuacao from "../components/AreasAtuacao";
 import Contato from "../components/Contato";
 import Footer from "../components/Footer";
-
+import logoFrancisca from "../assets/logo-francisca-leal-transparente.png";
 function Home() {
   return (
     <>
@@ -36,7 +36,7 @@ function Home() {
 
             <div className="hero-logo">
               <img
-                src="/src/assets/logo-francisca-leal-transparente.png"
+                src={logoFrancisca}
                 alt="Francisca Leal Advocacia Especializada"
               />
             </div>

@@ -101,6 +101,21 @@
     position: relative;
   }
 
+  .header-brand {
+    width: calc(100% - 58px);
+    flex-shrink: 1;
+  }
+
+  .brand-name {
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+
+  .brand-subtitle {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
   .menu-toggle {
     display: flex;
   }
