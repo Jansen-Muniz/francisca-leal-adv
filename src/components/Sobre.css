@@ -219,10 +219,10 @@
   .sobre-conteudo {
     max-width: 100%;
     text-align: center;
-  }
 
-  .sobre-conteudo h2 {
-    font-size: 36px;
+    .sobre-conteudo h2 {
+      font-size: 36px;
+    }
   }
 
   .sobre-destaque {
