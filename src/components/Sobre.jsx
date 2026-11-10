@@ -29,6 +29,19 @@ function Sobre() {
             proporcionar segurança, clareza e tranquilidade durante momentos
             importantes da vida.
           </p>
+
+          <div className="sobre-formacao">
+            <h4>FORMAÇÃO E REGISTRO PROFISSIONAL</h4>
+
+            <p>
+              <strong>Formação:</strong> Bacharelado em Direito pela
+              Universidade Estadual do Piauí (UESPI).
+            </p>
+
+            <p>
+              <strong>Registro profissional:</strong> OAB/PI nº 5.244.
+            </p>
+          </div>
         </div>
 
         <div className="sobre-destaque">

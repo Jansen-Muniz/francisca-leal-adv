@@ -68,6 +68,54 @@
   margin-bottom: 20px;
 }
 
+/* Formação e registro profissional */
+.sobre-formacao {
+  position: relative;
+
+  margin-top: 32px;
+  padding-top: 25px;
+
+  border-top: 1px solid rgba(201, 164, 102, 0.45);
+}
+
+/* Pequeno detalhe dourado */
+.sobre-formacao::before {
+  content: "";
+
+  position: absolute;
+  top: -5px;
+  left: 0;
+
+  width: 9px;
+  height: 9px;
+
+  background-color: var(--cor-dourado);
+
+  transform: rotate(45deg);
+}
+
+.sobre-formacao h4 {
+  font-family: Georgia, serif;
+  font-size: 13px;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+
+  color: var(--cor-marrom);
+
+  margin-bottom: 15px;
+}
+
+.sobre-formacao p {
+  font-size: 15px;
+  line-height: 1.8;
+
+  margin-bottom: 10px;
+}
+
+.sobre-formacao p:last-child {
+  margin-bottom: 0;
+}
+
 /* Elemento visual */
 .sobre-destaque {
   display: flex;
@@ -157,6 +205,15 @@
   .sobre-container {
     grid-template-columns: 1fr;
     gap: 30px;
+  }
+
+  .sobre-formacao {
+    text-align: center;
+  }
+
+  .sobre-formacao::before {
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
   }
 
   .sobre-conteudo {
