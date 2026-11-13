@@ -1,4 +1,5 @@
 import "./AreasAtuacao.css";
+import { Link } from "react-router-dom";
 
 const areas = [
   {
@@ -57,6 +58,11 @@ function AreasAtuacao() {
               <span className="area-detalhe">◆</span>
             </article>
           ))}
+        </div>
+        <div className="areas-saiba-mais">
+          <Link to="/direito-de-familia">
+            Conheça nossa atuação em Direito de Família →
+          </Link>
         </div>
       </div>
     </section>

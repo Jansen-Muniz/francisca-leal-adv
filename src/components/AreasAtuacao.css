@@ -122,6 +122,31 @@
   font-size: 1rem;
 }
 
+.areas-saiba-mais {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+}
+
+.areas-saiba-mais a {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: var(--cor-marrom);
+  color: var(--cor-marfim);
+  border: 1px solid var(--cor-marrom);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: 0.3s ease;
+}
+
+.areas-saiba-mais a:hover {
+  background-color: var(--cor-dourado);
+  border-color: var(--cor-dourado);
+  color: var(--cor-marrom);
+  transform: translateY(-3px);
+}
+
 /* RESPONSIVIDADE */
 
 @media (max-width: 1024px) {

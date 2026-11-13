@@ -1,0 +1,363 @@
+.pagina-servico {
+  background-color: var(--cor-marfim);
+  color: var(--cor-marrom);
+}
+
+/* Hero */
+.servico-hero {
+  min-height: max(500px, 44.45vw);
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 80px 10%;
+  background-color: #321f18;
+  color: var(--cor-marfim);
+}
+
+.servico-hero-imagem {
+  inset: 0;
+  z-index: 0;
+  position: absolute;
+}
+
+.servico-hero-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.servico-hero-imagem::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(45, 25, 20, 0.92) 0%,
+    rgba(45, 25, 20, 0.72) 48%,
+    rgba(45, 25, 20, 0.25) 100%
+  );
+}
+
+.servico-hero-conteudo {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+}
+
+.servico-subtitulo,
+.servico-etiqueta {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--cor-dourado);
+}
+
+.servico-hero h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(38px, 5vw, 64px);
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.servico-hero p {
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 580px;
+  margin-bottom: 30px;
+}
+
+.servico-botao {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: var(--cor-dourado);
+  color: #321f18;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+}
+
+.servico-botao:hover {
+  background-color: #e2c58f;
+  transform: translateY(-3px);
+}
+
+/* Introdução */
+.servico-introducao {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 90px 25px;
+  text-align: center;
+}
+
+.servico-introducao h2,
+.servico-atuacoes h2,
+.servico-contato h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: normal;
+  line-height: 1.3;
+  margin-bottom: 25px;
+}
+
+.servico-introducao p {
+  font-size: 16px;
+  line-height: 1.9;
+  color: #66564e;
+  margin-bottom: 18px;
+}
+
+/* Áreas de atuação */
+.servico-atuacoes {
+  padding: 85px 8%;
+  background-color: #f2ece2;
+  text-align: center;
+}
+
+.servico-grid {
+  max-width: 1100px;
+  margin: 45px auto 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.servico-card {
+  display: flex;
+  flex-direction: column;
+  padding: 35px 30px;
+  background-color: #fffdf9;
+  border: 1px solid rgba(100, 32, 32, 0.12);
+  text-align: left;
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.servico-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--cor-dourado);
+  box-shadow: 0 12px 28px rgba(45, 25, 20, 0.1);
+}
+
+.servico-card-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: var(--cor-marrom);
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.servico-card h3 {
+  font-family: Georgia, serif;
+  font-size: 23px;
+  font-weight: normal;
+  margin-bottom: 15px;
+  color: var(--cor-marrom);
+}
+
+.servico-card p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #66564e;
+}
+
+/* Contato */
+.servico-contato {
+  padding: 85px 25px;
+  text-align: center;
+}
+
+/* Centraliza o terceiro card quando houver exatamente três */
+.servico-card:nth-child(3):last-child {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: 50%;
+}
+
+.servico-contato p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  line-height: 1.8;
+  color: #66564e;
+}
+
+/* Navegação entre páginas de serviços */
+
+.servico-navegacao {
+  padding: 55px 10%;
+  text-align: center;
+  background-color: #f8f4ed;
+}
+
+.servico-voltar {
+  display: inline-block;
+  margin-bottom: 35px;
+  color: var(--cor-marrom);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.servico-voltar:hover {
+  color: var(--cor-dourado);
+  transform: translateX(-4px);
+}
+
+.servico-navegacao h2 {
+  margin-bottom: 25px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.servico-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.servico-links a {
+  color: var(--cor-marrom);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 20px;
+  border: 1px solid rgba(100, 32, 32, 0.2);
+  transition: 0.3s ease;
+}
+
+.servico-links a:hover {
+  background-color: var(--cor-marrom);
+  color: var(--cor-marfim);
+  border-color: var(--cor-marrom);
+}
+
+.servico-voltar-home {
+  padding: 22px 10%;
+  background-color: var(--cor-marfim);
+}
+
+.servico-voltar-home .servico-voltar {
+  display: inline-block;
+  color: var(--cor-marrom);
+  font-size: 14px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.servico-voltar-home .servico-voltar:hover {
+  color: var(--cor-dourado);
+}
+
+@media (max-width: 700px) {
+  .servico-navegacao {
+    padding: 45px 7%;
+  }
+
+  .servico-links {
+    flex-direction: column;
+  }
+
+  .servico-links a {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+/* Responsividade */
+@media (min-width: 701px) and (max-width: 1000px) {
+  .servico-hero {
+    min-height: 0;
+    aspect-ratio: 2 / 1;
+    padding: 40px 7%;
+  }
+
+  .servico-hero-imagem img {
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .servico-hero-conteudo {
+    max-width: 60%;
+  }
+
+  .servico-hero h1 {
+    font-size: 42px;
+  }
+
+  .servico-hero p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 700px) {
+  .servico-hero {
+    min-height: auto;
+    padding: 0;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .servico-hero-imagem {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1774 / 887;
+    overflow: hidden;
+  }
+
+  .servico-hero-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .servico-hero-imagem::after {
+    display: none;
+  }
+
+  .servico-hero-conteudo {
+    width: 100%;
+    max-width: 100%;
+    padding: 40px 7%;
+    background-color: #321f18;
+  }
+
+  .servico-hero h1 {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .servico-hero p {
+    max-width: 100%;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .servico-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .servico-atuacoes {
+    padding: 65px 7%;
+  }
+
+  .servico-introducao {
+    padding: 65px 25px;
+  }
+
+  .servico-card:nth-child(3):last-child {
+    grid-column: auto;
+    width: 100%;
+  }
+}
