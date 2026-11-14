@@ -1,13 +1,36 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import "./Header.css";
 
 function Header() {
   const [menuAberto, setMenuAberto] = useState(false);
+  const location = useLocation();
 
   function fecharMenu() {
     setMenuAberto(false);
   }
 
+  useEffect(() => {
+    const hash = location.hash;
+
+    if (hash) {
+      const id = hash.substring(1);
+
+      const timer = setTimeout(() => {
+        document.getElementById(id)?.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }, 200);
+
+      return () => clearTimeout(timer);
+    } else {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+  }, [location.pathname, location.hash]);
   return (
     <header className="header">
       <a href="#inicio" className="header-brand" onClick={fecharMenu}>
@@ -34,16 +57,16 @@ function Header() {
       </button>
 
       <nav className={`header-nav ${menuAberto ? "ativo" : ""}`}>
-        <a href="#inicio" onClick={fecharMenu}>
+        <a href="/#inicio" onClick={fecharMenu}>
           Início
         </a>
-        <a href="#sobre" onClick={fecharMenu}>
+        <a href="/#sobre" onClick={fecharMenu}>
           O Escritório
         </a>
-        <a href="#atuacao" onClick={fecharMenu}>
+        <a href="/#atuacao" onClick={fecharMenu}>
           Áreas de Atuação
         </a>
-        <a href="#contato" onClick={fecharMenu}>
+        <a href="/#contato" onClick={fecharMenu}>
           Contato
         </a>
       </nav>

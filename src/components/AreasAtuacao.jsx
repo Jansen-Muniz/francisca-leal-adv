@@ -60,8 +60,9 @@ function AreasAtuacao() {
           ))}
         </div>
         <div className="areas-saiba-mais">
-          <Link to="/direito-de-familia">
-            Conheça nossa atuação em Direito de Família →
+          <Link to="/direito-de-familia#sobre-servico">
+            <span>Conheça nossa atuação em Direito de Família</span>
+            <span aria-hidden="true">→</span>
           </Link>
         </div>
       </div>
