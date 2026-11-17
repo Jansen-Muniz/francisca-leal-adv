@@ -1,5 +1,5 @@
 import "./Sobre.css";
-import fotoFrancisca from "../assets/francisca-leal.jpg";
+import fotoFrancisca from "../assets/francisca-leal.webp";
 
 function Sobre() {
   return (

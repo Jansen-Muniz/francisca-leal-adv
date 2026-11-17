@@ -35,7 +35,7 @@ function Home() {
 
             <div className="hero-logo">
               <img
-                src="/logo-francisca-leal.webp"
+                src="/logo-francisca-leal-560.webp"
                 alt="Francisca Leal Advocacia Especializada"
               />
             </div>
