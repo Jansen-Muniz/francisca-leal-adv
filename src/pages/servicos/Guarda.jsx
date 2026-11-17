@@ -52,7 +52,7 @@ function Guarda() {
       <section className="servico-hero">
         <div className="servico-hero-imagem">
           <img
-            src="/direito-familia-hero.png"
+            src="/direito-familia-hero.webp"
             alt="Ambiente jurídico com livros e balança da Justiça"
           />
         </div>

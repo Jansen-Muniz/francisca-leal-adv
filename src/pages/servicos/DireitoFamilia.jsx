@@ -41,7 +41,7 @@ function DireitoFamilia() {
       <section className="servico-hero">
         <div className="servico-hero-imagem">
           <img
-            src="/direito-familia-hero-panoramica.png"
+            src="/direito-familia-hero-panoramica.webp"
             alt="Ambiente jurídico com livros, balança da Justiça e representação de uma família"
           />
         </div>
